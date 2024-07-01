@@ -1,18 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+/*
+    GENERAL
+*/
 *{
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     /* font-weight: <weight>; */
     font-style: normal;
+    margin: 0;
+    padding: 0;
+    /* background-color: #CDE8E5; */
   }
 
 body{
-    background-image: url(Assets/bg.jpg);
+    /* background-image: url(Assets/bg.jpg); */
     /* background-size: cover; */
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
 }
+
+/*
+    HEADER, LOGO, NAVIGATION BAR FROM
+    https://www.youtube.com/watch?v=2DVkNvVcQAU
+*/
 
 .header{
     position: fixed;
@@ -20,29 +31,47 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 40px;
-    background-color: rgb(6,57,48);
+    /* background-color: rgb(6,57,48); */
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    background-color: black;
 }
 
+/*
+    LOGO
+*/
 .logo{
     font-weight: 800;
     font-size: 32px;
-    color:white;
+    color: white;
     text-decoration: none;
+    background-color: black;
 }
 
+.logo:hover{
+    cursor:default;
+}
+
+/*
+    NAVIGATION BAR
+*/
 .nav-bar a{
     position: relative;
-    font-size: 16px;
+    font-size: 25px;
     color:white;
     text-decoration: none;
     margin-right: 60px;
     font-weight: 400;
     text-decoration: none;
+    background-color: black;
 }
 
+/*
+    The animation is bascially a white block on the text initally
+    but it scales down to 2px height and 0% width
+    When user hover, it will increase the width in .3s, kinda like keyframe in davinci
+*/
 .nav-bar a::before{
     content: '';
     top: 100%;
@@ -56,4 +85,51 @@ body{
 
 .nav-bar a:hover::before{
     width: 100%;
+}
+
+/*
+    INTRODUCTION
+*/
+#home{
+    height: 100% vh;
+}
+
+.profile-pic{
+    padding-top: 100px;
+    padding-left: 35px;
+    height: 50%;
+    width: 50%;
+}
+
+.introduction{
+    font-size: 80px;
+}
+
+.quote{
+    font-size: 60px;
+    font-weight: 30px;
+}
+
+/*
+    ABOUT ME
+*/
+#about-me{
+    border-top: 7rem solid;
+    border-bottom: 7rem solid;
+    border-right: 15rem solid;
+    border-left: 15rem solid;
+    border-color: #CDE8E5;
+    background-color: #CDE8E5;
+    padding: 50px;
+}
+
+.about-me-title{
+    font-size: 7rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.about-me-text{
+    font-size: 2rem;
+    text-align: center;
 }
