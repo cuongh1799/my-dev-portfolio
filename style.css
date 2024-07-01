@@ -14,21 +14,7 @@ body{
     background-repeat: no-repeat;
 }
 
-.logo{
-    font-weight: 800;
-    font-size: 32px;
-    color:white;
-    text-decoration: none;
-}
-
-.nav-option{
-    font-size: 16px;
-    color:white;
-    text-decoration: none;
-    margin-right: 40px;
-    font-weight: 400;
-}
-.nav-bar{
+.header{
     position: fixed;
     top: 0;
     left: 0;
@@ -38,4 +24,36 @@ body{
     display: flex;
     justify-content: space-between; 
     align-items: center;
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 32px;
+    color:white;
+    text-decoration: none;
+}
+
+.nav-bar a{
+    position: relative;
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+    margin-right: 60px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.nav-bar a::before{
+    content: '';
+    top: 100%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    transition: .3s;
+}
+
+.nav-bar a:hover::before{
+    width: 100%;
 }
