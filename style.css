@@ -92,19 +92,57 @@ body{
     height: 100% vh;
 }
 
+.wrapper {
+    height: 20vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+    padding-left: 20%;
+  }
+  
+  .typing-demo {
+    width: 42ch;
+    animation: typing 2s steps(40), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 60px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
 .profile-pic{
-    padding-top: 100px;
-    padding-left: 35px;
+    /* padding-top: 100px;
+    padding-left: 35px; */
+    padding-left: 12.5em;
     height: 50%;
     width: 50%;
 }
 
 .introduction{
-    padding: 2rem;
-    font-size: 40vm;
+    display: inline-block;
+    padding-top: 8rem;
+    font-size: 60px;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .quote{
+    padding-left: 45%;
     font-size: 30px;
     font-weight: 300;
 }
@@ -113,13 +151,15 @@ body{
     ABOUT ME
 */
 #about-me{
-    border-top: 7rem solid;
-    border-bottom: 7rem solid;
+    /* border-top: 2rem solid;
+    border-bottom: 2rem solid;
     border-right: 15rem solid;
     border-left: 15rem solid;
     border-color: #CDE8E5;
     background-color: #CDE8E5;
-    padding: 50px;
+    padding: 50px; */
+    background-color: #CDE8E5;
+    padding: 1rem 4rem 4rem 4rem;
 }
 
 .about-me-title{
