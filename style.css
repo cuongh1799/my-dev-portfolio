@@ -87,6 +87,11 @@ body{
     width: 100%;
 }
 
+.Hamburger{
+    display: none;
+    cursor: pointer;
+}
+
 /*
     INTRODUCTION
 */
@@ -163,6 +168,7 @@ body{
     border-color: white;
     background-color: #CDE8E5;
     padding: 1rem 4rem 4rem 4rem;
+    width: auto;
 }
 
 .about-me-title{
@@ -183,6 +189,7 @@ body{
 #my-portfolio{
     overflow: hidden;
     justify-content: space-between;
+    width: auto;
 }
 
 .my-portfolio-title{
@@ -220,6 +227,7 @@ body{
     padding: 2rem;
     background-color: black;
     color:white;
+    width: auto;
 }
 
 .contact-me{
