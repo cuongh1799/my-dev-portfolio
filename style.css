@@ -180,7 +180,7 @@ body{
 }
 
 .about-me-text{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     text-align: center;
 }
@@ -195,7 +195,7 @@ body{
 }
 
 .my-portfolio-title{
-    font-size: 5rem;
+    font-size: 3rem;
     padding-left: 5rem;
 }
 
@@ -207,13 +207,13 @@ body{
 }
 
 .my-portfolio-section-title{
-    font-size: 7rem;
-    padding-bottom: 10rem;
-    padding-top: 6rem;
+    font-size: 4rem;
+    padding-bottom: 7rem;
+    padding-top: 3rem;
 }
 
 .my-portfolio-description{
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 200;
 }
 
@@ -227,10 +227,11 @@ body{
     CONTACT
 */
 .footer{
+    box-sizing: content-box;
     padding: 2rem;
     background-color: black;
     color:white;
-    width: auto;
+    width: 100%;
 }
 
 .contact-me{
@@ -258,9 +259,13 @@ body{
     width: 6rem;
 }
 
-@media(max-width: 1000px){
+/*
+    Iphone Se
+*/
+
+@media(max-width: 1145px){
     .introduction{
-        height: 50vh;
+        height: fit-content;
         padding-right: 0%;
         padding-left: 0%;
         padding-top: 5rem;
@@ -275,6 +280,7 @@ body{
     }
 
     .quote{
+        font-size: 12px;
         padding-left: 2rem;
     }
     
@@ -283,24 +289,27 @@ body{
     }
 
     #about-me{
-        padding: 0;
+        padding: 0 0 2rem 0;
     }
 
     .about-me-title{
-        font-size: 2.5rem;
+        font-size: 20px;
     }
 
     .about-me-text{
-        font-size: 1.3rem;
+        font-size: 16px;
+        font-weight: 250;
     }
 
     .my-portfolio-section-title{
-        padding: 1rem 3rem 6rem 4.7rem;
-        font-size: 4rem;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 0rem 3rem 0rem;
+        font-size: 40px;
     }
 
     .my-portfolio-title{
-        font-size: 3rem;
+        font-size: 2rem;
         padding-left: 0.2rem;
     }
 
@@ -308,14 +317,24 @@ body{
         padding-left: 0rem;
         padding-bottom: 5rem;
         display: block;
+        width: fit-content;
 
+    }
+    .my-portfolio-demo{
+        width: 300px;
+        height: 300px;
+    }
+
+    img.animated-gif{
+        width: 25rem;
+        height: auto;
     }
 
     .my-portfolio-description{
         border: 0.2rem;
         width: 100vw;
         padding-left: 0.2rem;
-        font-size: 2rem;
+        font-size: 20px;
     }
 
     .footer{
