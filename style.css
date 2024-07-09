@@ -57,6 +57,7 @@ body{
     NAVIGATION BAR
 */
 .nav-bar a{
+    display: inline-block;
     position: relative;
     font-size: 1.563rem;
     color:white;
@@ -86,9 +87,19 @@ body{
     width: 100%;
 }
 
-.Hamburger{
+.nav-bar-mobile{
     display: none;
-    cursor: pointer;
+    position: relative;
+    font-size: 1.563rem;
+    color:white;
+    margin-right: 3.75rem;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: black;
+}
+
+.nav-bar-mobile a{
+    margin-right: 0.3rem;
 }
 
 /*
@@ -277,6 +288,17 @@ body{
         padding-top: 30vh;
     }
 
+    .logo{
+        font-size: 1.3rem;
+    }
+
+    .nav-bar{
+        display: none;
+    }
+    .nav-bar-mobile{
+        display: BLOCK;
+    }
+
     .profile-pic{
         align-content: center;
         justify-content: center;
@@ -299,11 +321,6 @@ body{
     .quote{
         font-size: 12px;
         padding-left: 2rem;
-    }
-    
-    .profile-pic{
-        /* align-content: center;
-        text-align: center; */
     }
 
     #about-me{
