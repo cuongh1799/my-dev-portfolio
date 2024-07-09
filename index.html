@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuong's portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" type="text/css" href="mediaqueries.css">
     <link rel="icon" href="pfp.png">
 
     <!-- https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>
 
+    <!-- Awesome font CSS for brands icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
     <header class="header">
@@ -22,18 +26,24 @@
             <a href="Assets/Resume/cuongcv.pdf" target="_blank">Resume</a>
             <a href="#contact">Contact</a>
         </nav>
+
+        <nav class="nav-bar-mobile">
+            <a href="#about-me"><box-icon name='user' color='#f5eeee' ></box-icon></a>
+            <a href="#my-portfolio"><box-icon name='briefcase' color='#f5eeee' ></box-icon></a>
+            <a href="Assets/Resume/cuongcv.pdf" target="_blank"><box-icon name='file' color='#f5eeee' ></box-icon></a>
+            <a href="#contact"><box-icon name='phone' color='#f7efef' ></box-icon></a>
+        </nav>
     </header>
+    
     <section id="home">
         <div class="introduction">
             <div class="wrapper">
-                <div class="typing-demo">Software Engineer, Developer & Programmer</div>
+                <div class="typing-demo">Software Engineer</div>
             </div>
-            <!-- <div class="quote">"He has touched so many young souls"</div>
-            <div class="quote">- DrDisrespect's viewer, 2024</div> -->
             <div class="quote">"For a man to conquer himself is the first and noblest of all victories."</div>
             <div class="quote">- Plato</div>
 
-            <div class="profile-pic">
+            <div class="quote">
                 <img src="pfp.png">
             </div>
         </div>
@@ -57,10 +67,10 @@
                 <div class="my-portfolio-description">WuWaWiki aims to provide quick peak on Wuthering Wave character's materials required for Leveling, Trace acension... etc.</div>
                 <div class="my-portfolio-description">The project is built using the .NET Framework, all of the data are handle in JSON.</div>
                 <div class="my-portfolio-description">------------------------------------------------------------------------------------------------</div>
-                <div class="my-portfolio-description">Project Github: https://github.com/cuongh1799/WuWaWiki</div>
+                <a href="https://github.com/cuongh1799/WuWaWiki" class="my-portfolio-description">Project Github</a>
             </span>
             <span class="my-portfolio-demo">
-                <img src="Assets/changlireborn/changlireborndemo.gif">
+                <img class="animated-gif" src="Assets/changlireborn/changlireborndemo.gif">
             </span>
         </div>
 
@@ -71,10 +81,10 @@
                 <div class="my-portfolio-description">Simple DiscordBot customize with Honkai: Star Rail theme, comes with multiple function such as plays Music in Channel, rolls, send custom messages</div>
                 <div class="my-portfolio-description">The project is built using the JDA and LavaPlayer API, coded in Java Language.</div>
                 <div class="my-portfolio-description">------------------------------------------------------------------------------------------------</div>
-                <div class="my-portfolio-description">Project Github: https://github.com/cuongh1799/HSR-Discord-bot</div>
+                <a href="https://github.com/cuongh1799/HSR-Discord-bot" class="my-portfolio-description">Project Github</a>
             </span>
             <span class="my-portfolio-demo">
-                <img src="Assets/HSRBot/HSRBotdemo.gif">
+                <img class="animated-gif" src="Assets/HSRBot/HSRBotdemo.gif">
             </span>
         </div>
 
@@ -91,29 +101,16 @@
         </div> -->
     </section>
 
-    <!-- <section id="contact-me">
-        <div class="contact-info">
-            lule
-        </div>
-    </section> -->
     <section id="contact">
-        <footer class="footer">
+        <div class="footer">
             <div class="contact-me">Contact me</div>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/huynh-cuong-0076832a3/">
-                    <span><img class="social-media-icon" src="Assets/SocialMediaIcon/LinkedIn.png"></span>
-                </a>
-                <span class="contact-info">Huynh Cuong</span>
-                <!-- <span><img class="social-media-icon" src="Assets/SocialMediaIcon/facebook.png"></span> -->
-                <!-- <span class="contact-info"> or</span> -->
-                 <a href="mailto:cuonghuynh1009@gmail.com">
-                    <span><img class="social-media-icon" src="Assets/SocialMediaIcon/Gmail.png"></span>
-                 </a>
-                
-                <span class="contact-info">cuonghuynh1009@gmail.com</span>
-                <!-- <span><img class="social-media-icon" src="Assets/SocialMediaIcon/Instagram.png"></span> -->
-            </div>
-        </footer>
+            <p class="quote-footer">“A new idea comes suddenly and in a rather intuitive way, but intuition is nothing but the outcome of earlier intellectual experience.”</p>
+            <div class="link-icon">
+                <a target="_blank" class="brand-icon" href="https://www.linkedin.com/in/huynh-cuong-0076832a3/"><box-icon name='linkedin' type='logo' color='rgba(243,237,237,0.99)' ></box-icon></a>
+                <a target="_blank" class="brand-icon" href="https://github.com/cuongh1799"><box-icon name='github' type='logo' color='rgba(243,237,237,0.99)' ></box-icon></a>
+                <a target="_blank" class="brand-icon" href=""><box-icon name='discord-alt' type='logo' color='rgba(243,237,237,0.99)' ></box-icon></a>
+            </div>         
+        </div>
     </section>
    
 </body>
