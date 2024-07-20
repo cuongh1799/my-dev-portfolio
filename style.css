@@ -230,6 +230,9 @@ body{
     box-shadow: 8px 8px 4px 4px rgba(35, 35, 36);
     /* padding-left: 2rem; */
 }
+img.animated-gif{
+    width:50vw;
+}
 
 /*
     CONTACT
